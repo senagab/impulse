@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Mestre Cuca</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+          <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cardapio.css" rel="stylesheet">
+
+</head>
+<body class="text-center">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">Mestre Cuca</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Cardápios</a>
+        <a class="nav-link" href="#">Outra</a>
+      </nav>
+    </div>
+  </header>
+
+
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mês
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Janeiro</a>
+    <a class="dropdown-item" href="#">Fevereiro</a>
+    <a class="dropdown-item" href="#">Março</a>
+    <a class="dropdown-item" href="#">Abril</a>
+    <a class="dropdown-item" href="#">Maio</a>
+    <a class="dropdown-item" href="#">Junho</a>
+    <a class="dropdown-item" href="#">Julho</a>
+    <a class="dropdown-item" href="#">Agosto</a>
+    <a class="dropdown-item" href="#">Setembro</a>
+    <a class="dropdown-item" href="#">Outubro</a>
+    <a class="dropdown-item" href="#">Novembro</a>
+    <a class="dropdown-item" href="#">Dezembro</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Semana
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Semana 1</a>
+    <a class="dropdown-item" href="#">Semana 2</a>
+    <a class="dropdown-item" href="#">Semana 3</a>
+    <a class="dropdown-item" href="#">Semana 4</a>
+    <a class="dropdown-item" href="#">Semana 5</a>
+  </div>
+</div>
+
+<div style="position: relative; float: left;" class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Refeição
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Refeição 1</a>
+    <a class="dropdown-item" href="#">Refeição 2</a>
+    <a class="dropdown-item" href="#">Refeição 3</a>
+    <a class="dropdown-item" href="#">Refeição 4</a>
+  </div>
+</div>
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Dia</th>
+      <th scope="col">Grupo Alimentar 1</th>
+      <th scope="col">Grupo Alimentar 2</th>
+      <th scope="col">Grupo Alimentar 3</th>
+      <th scope="col">#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Seg</th>
+      <td>Carne Vermelha</td>
+      <td>Salada</td>
+      <td>Massa 1</td>
+      <td><a data-toggle="modal" data-target="#EditarCardapio" title="Editar"><i class="fas fa-edit"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">Ter</th>
+      <td>Carne Branca</td>
+      <td>Salada Roxa</td>
+      <td>Massa 2</td>
+      <td><a data-toggle="modal" data-target="#EditarCardapio" title="Editar"><i class="fas fa-edit"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">Qua</th>
+      <td>Carne Vermelha</td>
+      <td>Salada verde</td>
+      <td>Massa 3</td>
+      <td><a data-toggle="modal" data-target="#EditarCardapio" title="Editar"><i class="fas fa-edit"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">Qui</th>
+      <td>Carne Vermelha</td>
+      <td>Salada verde</td>
+      <td>Massa 3</td>
+      <td><a data-toggle="modal" data-target="#EditarCardapio" title="Editar"><i class="fas fa-edit"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">Sex</th>
+      <td>Carne Vermelha</td>
+      <td>Salada verde</td>
+      <td>Massa 3</td>
+      <td><a data-toggle="modal" data-target="#EditarCardapio" title="Editar"><i class="fas fa-edit"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Valor Disponível</th>
+      <th scope="col">Gasto Atual</th>
+      <th scope="col">Diferença</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>R$10.000</th>
+      <td>R$5.000</td>
+      <td>R$5.000</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="EditarCardapio" tabindex="-1" role="dialog" aria-labelledby="editarCardapio" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar Refeição</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Cover template for <a href="https://getbootstrap.com/">Grupo 3 Impulse</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+  </footer>
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>
